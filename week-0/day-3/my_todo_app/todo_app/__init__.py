@@ -67,6 +67,6 @@ def create_app(test_config=None):
         name = request.args.get('name')
         todo = request.args.get('todo')
         add_todo_by_name(name, todo)
-        return render_template('succes.html')
+        return render_template('success.html')
 
     return app
